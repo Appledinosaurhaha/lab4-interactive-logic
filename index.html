@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Energy & Focus Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <h1>Daily Focus & Energy Planner</h1>
+        <p class="subtitle">Select your current energy level to get a personalized workflow recommendation.</p>
+
+        <div class="input-section">
+            <label for="energySelect">How is your energy right now?</label>
+            <select id="energySelect">
+                <option value="">-- Choose your current state --</option>
+                <option value="high">High Energy / Crushing It</option>
+                <option value="medium">Steady / Moderate</option>
+                <option value="low">Low Energy / Sluggish</option>
+            </select>
+            <button id="decideBtn">Generate Plan</button>
+        </div>
+
+        <div id="outputCard" class="output-card hidden">
+            <h2 id="outputTitle">Your Recommendation</h2>
+            <p id="outputText">Your customized plan will appear here.</p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
